@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-5">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Portfolio</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#about-me">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#portfolio"
+                >Portfolio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#contact-me"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header>
+      <div class="bg-primary text-center text-white p-5">
+        <h1 class="fw-normal display-3">Welcome to my Portfolio</h1>
+        <p class="fs-3 fw-lighter">I showcase my projects and skills here.</p>
+      </div>
+    </header>
+
+    <!-- About me section -->
+    <section class="container p-5" id="about-me">
+      <h2 class="text-center pb-3">About Me</h2>
+      <div class="row">
+        <img
+          class="col-6"
+          src="https://images.unsplash.com/photo-1513258496099-48168024aec0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80"
+          alt="Computer Science Student"
+        />
+        <p class="col-6">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec egestas
+          felis et luctus elementum. Morbi lacinia nisl id ex accumsan posuere.
+          Nulla facilisi. Vestibulum ante ipsum primis in faucibus orci luctus
+          et ultrices posuere cubilia Curae; Donec elementum nunc at augue
+          faucibus, vel fringilla sem mollis. Pellentesque habitant morbi
+          tristique senectus et netus et malesuada fames ac turpis egestas.
+        </p>
+      </div>
+    </section>
+
+    <!-- Portfolio Projects Section -->
+    <section class="bg-light py-5" id="portfolio">
+      <div class="container">
+        <h2 class="text-center mb-5">Portfolio</h2>
+        <div class="row">
+          <div class="col-4">
+            <div class="card">
+                <img class="card-img-top" src="https://images.unsplash.com/photo-1520085601670-ee14aa5fa3e8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Project-1 image">
+                <div class="card-body">
+                    <h5>Project 1</h5>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, rerum.</p>
+                    <button class="btn btn-primary">Learn more</button>
+                </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card">
+                <img class="card-img-top" src="https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Y29kaW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60" alt="Project-2 image">
+                <div class="card-body">
+                    <h5>Project 2</h5>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, rerum.</p>
+                    <button class="btn btn-primary">Learn more</button>
+                </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card">
+                <img class="card-img-top" src="https://images.unsplash.com/photo-1562813733-b31f71025d54?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80" alt="Project-3 image">
+                <div class="card-body">
+                    <h5>Project 3</h5>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, rerum.</p>
+                    <button class="btn btn-primary">Learn more</button>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact form section -->
+    <section class="container py-5" id="contact-me">
+        <h2 class="text-center">Contact</h2>
+        <div class="row">
+            <div class="col-6 mx-auto">
+        <!-- Name -->
+        <label for="name" class="form-label mt-3">Name</label>
+        <input type="text" id="name" class="form-control" placeholder="Enter your name">
+        <!-- Email -->
+        <label for="email" class="form-label mt-3">Email</label>
+        <input type="text" id="email" class="form-control" placeholder="Enter your Email-id">
+        <!-- Message box -->
+        <label for="message" class="form-label mt-3">Message</label>
+        <textarea id="message" class="form-control" placeholder="Write your message here..." rows="5"></textarea>
+        <button type="submit" class="btn btn-primary mt-3 btn-lg w-100 ">Submit</button>
+    </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark p-3 text-white text-center">
+      © 2023 My Portfolio. All rights reserved.
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
